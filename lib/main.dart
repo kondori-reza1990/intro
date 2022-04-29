@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
           height: 150,
           fit: BoxFit.fitHeight
         ),
-        Text(
+        const Text(
           "This app is Secure...",
           style: TextStyle(fontSize: 15, color: Colors.black),
         )
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Lottie.asset("assets/language.json",
             height: 150,
             fit: BoxFit.fitHeight),
-        Text(
+        const Text(
           "This app is Multi Language...",
           style: TextStyle(fontSize: 15, color: Colors.black),
         )
@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Lottie.asset("assets/mobile.json",
             height: 150,
             fit: BoxFit.fitHeight),
-        Text(
+        const Text(
           "This app have beautiful UI",
           style: TextStyle(fontSize: 15, color: Colors.black),
         )
@@ -83,10 +83,10 @@ class _MyHomePageState extends State<MyHomePage> {
             length: items.length,
             child: Builder(
                 builder: (BuildContext context) => Padding(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       child: Column(
                         children: [
-                          TabPageSelector(),
+                          const TabPageSelector(),
                           Expanded(child: TabBarView(children: items)),
                         ],
                       ),
